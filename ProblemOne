@@ -1,0 +1,15 @@
+#include<iostream>
+
+
+int main(){
+	int count, total = 0;
+
+	for (count = 1; count < 1000; count++){
+		if (count % 3 == 0 || count % 5 == 0){
+			total += count;
+		}
+	}
+	std::cout << total;
+	system("pause");
+	return 0;
+}

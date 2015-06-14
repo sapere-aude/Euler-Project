@@ -10,6 +10,6 @@ int main(){
 		}
 	}
 	std::cout << total;
-	system("pause");
+
 	return 0;
 }

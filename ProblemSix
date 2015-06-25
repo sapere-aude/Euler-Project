@@ -1,0 +1,42 @@
+#include <iostream>
+
+int sumSquares(){
+	int total = 0, n = 0;
+
+	//Square all natural numbers through 100 and acumulate total
+	for (int i = 1; i < 101; i++){
+		n = i * i;
+		total += n;
+	}
+
+	return total;
+}
+
+
+int squaredSum(){
+	int total = 0, n = 0;
+
+	//Accumulate total for natural numbers through 100
+	for (int i = 1; i < 101; i++){
+		total += i;
+	}
+	//Square accumulation
+	total = total * total;
+
+	return total;
+}
+
+int main(){
+
+	int numOne = 0, numTwo = 0, difference = 0;
+
+	numOne = squaredSum();
+	numTwo = sumSquares();
+
+	//Calculate Difference
+	difference = numOne - numTwo;
+
+	std::cout << "The difference is " << difference;
+
+	return 0;
+}
